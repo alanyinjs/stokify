@@ -1,9 +1,9 @@
 import React from 'react';
 
-const AddStockPage = () => (
+const AddTransactionPage = () => (
   <div>
     <p>This is to add stocks</p>
   </div>
 )
 
-export default AddStockPage;
+export default AddTransactionPage;

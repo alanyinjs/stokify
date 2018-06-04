@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const StockDashboardPage = () => (
+const ErrorPage = () => (
   <div>
     <h1>Error 404!</h1>
-    <div>Please go back to homepage.</div>
+    <Link to='/'>Go back to homepage</Link>
   </div>
 )
 
-export default StockDashboardPage;
+export default ErrorPage;

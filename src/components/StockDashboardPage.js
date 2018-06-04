@@ -1,9 +1,10 @@
 import React from 'react';
+import TransactionList from './TransactionList';
 
 const StockDashboardPage = () => (
   <div>
-    <h1>Stock History Record</h1>
-    <div>Display stock history record</div>
+    <h2>Stock History Record</h2>
+    <TransactionList />
   </div>
 )
 
