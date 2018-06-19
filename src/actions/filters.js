@@ -4,6 +4,21 @@ export const setNameFilter = (name = '') => ({
   name
 })
 
+//set type filter to all
+export const selectAll = () => ({
+  type: "SELECT_ALL"
+})
+
+//set type filter to buy
+export const selectBuy = () => ({
+  type: "SELECT_BUY"
+})
+
+//set type filter to sell
+export const selectSell = () => ({
+  type: "SELECT_SELL"
+})
+
 //sort by date
 export const sortByDate = () => ({
   type: "SORT_BY_DATE"
@@ -19,7 +34,6 @@ export const setStartDate = (startDate = undefined) => ({
   type: "SET_START_DATE",
   startDate
 })
-
 
 //set end date
 export const setEndDate = (endDate = undefined) => ({

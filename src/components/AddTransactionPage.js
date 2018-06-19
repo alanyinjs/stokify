@@ -1,9 +1,35 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import moment from 'moment';
+import TransactionForm from './TransactionForm';
+import { addTransaction } from '../actions/transactions';
 
-const AddTransactionPage = () => (
-  <div>
-    <p>This is to add stocks</p>
-  </div>
-)
+//TODO: Add transaction 
 
-export default AddTransactionPage;
+
+
+class AddTransactionPage extends React.Component{
+
+  onSubmit = (transaction) => {
+    this.props.dispatch(addTransaction({
+      ...transaction
+    }));
+    this.props.history.push('/');    
+  };
+
+  render(){
+    return (
+      <div>
+        <p>Adding Transaction Form</p>
+        <TransactionForm onSubmit={this.onSubmit}/>
+      </div>
+    )
+  }
+}
+
+
+const mapStateToProps = (state) => {
+  return state;
+}
+
+export default connect(mapStateToProps)(AddTransactionPage);

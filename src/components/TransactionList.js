@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import TransactionListItem from './TransactionListItem';
+import selectTransactions from '../selectors/transactions';
 
 const TransactionList = (props) => (
   <div>
@@ -9,10 +10,11 @@ const TransactionList = (props) => (
   </div>
 );
 
-
 const mapStateToProps = (state) =>{
-  return state;
+  console.log("filtered transactions", selectTransactions(state.transactions, state.filters));
+  return {
+    transactions: selectTransactions(state.transactions, state.filters)
+  };
 };
-
 
 export default connect(mapStateToProps)(TransactionList);

@@ -2,13 +2,15 @@ import React from 'react';
 import moment from 'moment';
 import { connect } from 'react-redux';
 import { removeTransaction } from '../actions/transactions';
+import { Link } from 'react-router-dom';
 
 const TransactionListItem = (props) => (
   <div>
-    {JSON.stringify(props.dispatch)}
-    Transaction of {props.name} type {props.type} price {props.price} amount {props.amount} created at {props.createdAt.format('DD/MM/YY')} 
-    <button onClick={() => {props.dispatch(removeTransaction(props.id))}}>Remove</button>
+    Transaction of {props.name} type {props.type} price {props.price} amount {props.amount} created at {props.date.format('DD/MM/YY')} 
+    <button onClick={(e) => {e.preventDefault()}}>
+      <Link to={`/edit/${props.id}`}>Edit</Link>
+    </button>
   </div>
 )
 
-export default connect()(TransactionListItem);
+export default TransactionListItem;

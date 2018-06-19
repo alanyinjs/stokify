@@ -5,8 +5,8 @@ const Header = () => (
   <header>
     <h1>Stockify - Transaction Butler</h1>
     <NavLink to='/' activeClassName="header__navlink--active" exact={true}>Dashboard</NavLink>
-    <NavLink to='/add' activeClassName="header__navlink--active">Add Stock</NavLink>
-    <NavLink to='/help' activeClassName="header__navlink--active">Help</NavLink>
+    <NavLink to='/add' activeClassName="header__navlink--active">Add Transaction</NavLink>
+    <NavLink to='/contact' activeClassName="header__navlink--active">Contact</NavLink>
   </header>
 )
 

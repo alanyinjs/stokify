@@ -8,7 +8,7 @@ export const addTransaction = (
     type='buy',
     price = 0,
     amount = 0,
-    createdAt = moment()
+    date = moment()
   } = {}
 ) => ({
     type: 'ADD_TRANSACTION',
@@ -18,7 +18,7 @@ export const addTransaction = (
       type,
       price,
       amount,
-      createdAt
+      date
     }
 });
 

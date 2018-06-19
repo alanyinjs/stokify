@@ -3,6 +3,7 @@ import moment from 'moment';
 const filtersReducerDefaultState = {
   name:'',
   sortBy: 'date',
+  selectType: 'all',
   startDate: moment().startOf('month'),
   endDate: moment().endOf('month')
 }
@@ -13,6 +14,21 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => {
       return {
         ...state,
         name: action.name
+      }
+    case 'SELECT_ALL':
+      return {
+        ...state,
+        selectType: 'all'
+      }
+    case 'SELECT_BUY':
+      return {
+        ...state,
+        selectType: 'buy'
+      }
+    case 'SELECT_SELL':
+      return {
+        ...state,
+        selectType: 'sell'
       }
     case 'SORT_BY_DATE':
       return {
