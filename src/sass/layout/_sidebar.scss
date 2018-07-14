@@ -1,0 +1,26 @@
+.sidebar {
+  background: $color-tertiary;
+  color: $color-secondary;
+  padding: 2rem;
+
+  &__nav-list {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    align-items: center;
+    height: 100%;
+  }
+
+  &__nav-item {
+    list-style-type: none;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    
+    & a {
+      text-decoration: none;
+      color: $color-secondary;
+      font-size: 1.6rem;
+      margin-left: 0.5rem;
+
+    }
+  }
+}

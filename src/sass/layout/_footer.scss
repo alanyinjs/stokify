@@ -1,0 +1,12 @@
+.footer {
+  background: $color-primary-light;
+  color: $color-secondary;
+  display: grid;
+  grid-template-rows: auto;
+  align-content: center;
+
+  & div {
+    text-align: center;
+  }
+}
+

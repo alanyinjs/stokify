@@ -9,12 +9,14 @@ import ContactPage from '../components/ContactPage';
 import ErrorPage from '../components/ErrorPage';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Sidebar from '../components/Sidebar';
 
 
 const AppRouter = () => (
   <Router>
-    <div>
+    <div className="main-page">
       <Header />
+      <Sidebar/>
       <Switch>
         <Route path='/' component={StockDashboardPage} exact={true} />
         <Route path='/add' component={AddTransactionPage} />

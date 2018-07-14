@@ -6,7 +6,15 @@ import selectTransactions from '../selectors/transactions';
 const TransactionList = (props) => (
   <div>
     <h3>Transaction List</h3>
-    {props.transactions.map((transaction) => <TransactionListItem key={transaction.id} {...transaction} /> )}
+    <div className="transaction-list">
+        <div className="transaction-list__header">Name</div>
+        <div className="transaction-list__header">Transaction Type</div>
+        <div className="transaction-list__header">Price</div>
+        <div className="transaction-list__header">Amount</div>
+        <div className="transaction-list__header">Time</div>
+        <div></div>
+      {props.transactions.map((transaction) => <TransactionListItem key={transaction.id} {...transaction} /> )}
+    </div>
   </div>
 );
 

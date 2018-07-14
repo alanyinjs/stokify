@@ -4,13 +4,12 @@ import { Provider } from 'react-redux';
 import configStore from './store/configStore';
 import AppRouter from './routers/AppRouter';
 import moment from 'moment';
-import './styles/styles.scss';
-import 'normalize.css/normalize.css';
+// import 'normalize.css/normalize.css';
+import './sass/main.scss';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 import { addTransaction } from './actions/transactions';
 import { setNameFilter, sortByDate, sortByName, setStartDate, setEndDate, selectSell } from './actions/filters';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 
 const root = document.getElementById('app');
@@ -28,11 +27,9 @@ store.dispatch(addTransaction({name:"BAL",type:"buy", price:1000, amount:1000, c
 
 
 const app = (
-  <MuiThemeProvider>
     <Provider store={store}>
       <AppRouter />
     </Provider>
-  </MuiThemeProvider>
 );
 
 ReactDOM.render(app, root);

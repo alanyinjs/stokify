@@ -1,0 +1,36 @@
+body, html, #app {
+  height: 100%;
+}
+
+.main-page {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr 5rem;
+  grid-template-columns: 22rem auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+.transaction-list {
+  font-size: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+
+  & div {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  &__header {
+    font-weight: 700;
+  }
+}
+
+
+
+.footer {
+  grid-area: footer;
+}

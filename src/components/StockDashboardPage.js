@@ -3,7 +3,7 @@ import TransactionList from './TransactionList';
 import TransactionFilters from './TransactionFilters';
 
 const StockDashboardPage = () => (
-  <div>
+  <div className="dashboard">
     <h2>Stock History Record</h2>
     <TransactionFilters />
     <TransactionList />
