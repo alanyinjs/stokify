@@ -1,15 +1,15 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route, NavLink} from 'react-router-dom';
-import StockDashboardPage from '../components/StockDashboardPage';
-import AddTransactionPage from '../components/AddTransactionPage';
-import EditTransactionPage from '../components/EditTransactionPage';
-import AboutPage from '../components/AboutPage';
-import HelpPage from '../components/HelpPage';
-import ContactPage from '../components/ContactPage';
-import ErrorPage from '../components/ErrorPage';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Sidebar from '../components/Sidebar';
+import StockDashboardPage from '../pages/StockDashboardPage';
+import AddTransactionPage from '../pages/AddTransactionPage';
+import EditTransactionPage from '../pages/EditTransactionPage';
+import AboutPage from '../pages/AboutPage';
+import HelpPage from '../pages/HelpPage';
+import ContactPage from '../pages/ContactPage';
+import ErrorPage from '../pages/ErrorPage';
+import Header from '../layout/Header';
+import Footer from '../layout/Footer';
+import Sidebar from '../layout/Sidebar';
 
 
 const AppRouter = () => (

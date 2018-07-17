@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { removeTransaction } from '../actions/transactions';
-import TransactionForm from './TransactionForm';
+import TransactionForm from '../components/TransactionForm';
 
 const EditTransactionPage = (props) => (
   <div>

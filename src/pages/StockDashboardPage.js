@@ -1,6 +1,6 @@
 import React from 'react';
-import TransactionList from './TransactionList';
-import TransactionFilters from './TransactionFilters';
+import TransactionList from '../components/TransactionList';
+import TransactionFilters from '../components/TransactionFilters';
 
 const StockDashboardPage = () => (
   <div className="dashboard">

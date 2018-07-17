@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import moment from 'moment';
-import TransactionForm from './TransactionForm';
+import TransactionForm from '../components/TransactionForm';
 import { addTransaction } from '../actions/transactions';
 
 //TODO: Add transaction 
